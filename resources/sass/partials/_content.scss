@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.cars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  .car-item {
+    position: relative;
+    left: 4px;
+    top: 4px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba($item-bg-color, .5);
+    box-shadow: 4px 4px 4px rgba($item-bg-color, 0);
+    transition: .3s;
+    &:hover {
+      left: 0;
+      top: 0;
+      background-color: rgba($item-bg-color, 1);
+      box-shadow: 4px 4px 4px rgba($secondary-bg-color, 1);
+    }
+    .cta {
+      display: block;
+      margin-top: 10px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

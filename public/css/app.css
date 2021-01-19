@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d3557;
+  background-color: #f1faee;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #e63946;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 120px;
+  background-color: rgba(69, 123, 157, 0.8);
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.cars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cars .car-item {
+  position: relative;
+  left: 4px;
+  top: 4px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: rgba(168, 218, 220, 0.5);
+  box-shadow: 4px 4px 4px rgba(168, 218, 220, 0);
+  transition: 0.3s;
+}
+
+.cars .car-item:hover {
+  left: 0;
+  top: 0;
+  background-color: #a8dadc;
+  box-shadow: 4px 4px 4px #457b9d;
+}
+
+.cars .car-item .cta {
+  display: block;
+  margin-top: 10px;
+}
+
+.cars .car-item .cta:hover {
+  text-decoration: underline;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(69, 123, 157, 0.8);
+}
+
