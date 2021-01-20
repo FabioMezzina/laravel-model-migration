@@ -1,9 +1,9 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="cars">
+    <div class="items">
         @foreach ($cars as $car)
-        <div class="car-item">
+        <div class="item">
             <h2>{{ $car->marca }}</h2>
             <h3>{{ $car->modello }}</h3>
             <p>{{ $car->targa }}</p>

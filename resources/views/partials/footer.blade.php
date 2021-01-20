@@ -1,3 +1,7 @@
 <footer>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae unde maxime ea quidem eaque hic. Nisi, dolorum atque impedit ipsum aliquam maxime deserunt vitae eos similique consequatur, sit cumque amet!</p>
+  @if (Request::path() == '/')
+    <a class="cta" href="{{ route('home-js') }}">Homepage JS</a>
+  @else
+    <a class="cta" href="{{ route('home') }}">Homepage PHP</a>  
+  @endif
 </footer>

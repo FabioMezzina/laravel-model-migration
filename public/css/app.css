@@ -19,6 +19,7 @@ body {
 }
 
 a {
+  display: block;
   font-weight: 600;
   text-decoration: none;
   color: #e63946;
@@ -39,7 +40,7 @@ main {
   flex-grow: 1;
 }
 
-.cars {
+.items {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +48,7 @@ main {
   align-items: center;
 }
 
-.cars .car-item {
+.items .item {
   position: relative;
   left: 4px;
   top: 4px;
@@ -58,25 +59,40 @@ main {
   transition: 0.3s;
 }
 
-.cars .car-item:hover {
+.items .item:hover {
   left: 0;
   top: 0;
   background-color: #a8dadc;
   box-shadow: 4px 4px 4px #457b9d;
 }
 
-.cars .car-item .cta {
-  display: block;
+.items .item .cta {
   margin-top: 10px;
 }
 
-.cars .car-item .cta:hover {
+.items .item .cta:hover {
   text-decoration: underline;
 }
 
 footer {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   background-color: rgba(69, 123, 157, 0.8);
+}
+
+footer .cta {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  color: #1d3557;
+  border: 2px solid;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+footer .cta:hover {
+  color: #f1faee;
+  background-color: #e63946;
+  border-color: transparent;
 }
 

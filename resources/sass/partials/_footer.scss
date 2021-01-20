@@ -1,5 +1,19 @@
 footer {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   background-color: rgba($secondary-bg-color, .8);
+  .cta {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    color: $main-color;
+    border: 2px solid;
+    border-radius: 10px;
+    transition: .3s;
+    &:hover {
+      color: $main-bg-color;
+      background-color: $cta-color;
+      border-color: transparent;
+    }
+  }
 }
