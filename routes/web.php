@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/**
+ * Homepage (PHP)
+ */
 Route::get('/', 'HomeController@index')->name('home');
 
+/**
+ * Homepage (JS)
+ */
+Route::get('/home-js', 'HomeJsController@index')->name('home-js');
+
+/**
+ * Car detail page
+ */
 Route::get('/car-detail/{id}', 'CarController@show')->name('car-detail');
